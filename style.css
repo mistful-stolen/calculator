@@ -1,0 +1,45 @@
+body {
+  color: white;
+  background-color: black;
+  margin: 0%;
+  height: 100vh;
+}
+
+p {
+  margin: 0%;
+}
+
+#calculator {
+  display: inline-flex;
+  flex-flow: column nowrap;
+  row-gap: 24px;
+}
+
+#anew-backspace {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+#control {
+  flex-flow: column;
+}
+
+#control,
+#control .row {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+#control .row p,
+#anew-backspace p {
+  border: outset 2px white;
+  border-radius: 5px;
+  padding: 25px;
+  text-align: center;
+  width: 16px;
+  height: 16px;
+}
