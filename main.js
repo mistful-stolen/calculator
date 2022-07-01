@@ -17,9 +17,6 @@ function operate(lastNumber, operator, nextNumber) {
       break;
     case "/":
       console.log(divide(lastNumber, nextNumber));
-
-      break;
-    default:
       break;
   }
 }
