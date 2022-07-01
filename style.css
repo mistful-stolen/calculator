@@ -3,6 +3,11 @@ body {
   background-color: black;
   margin: 0%;
   height: 100vh;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 p {
@@ -12,7 +17,32 @@ p {
 #calculator {
   display: inline-flex;
   flex-flow: column nowrap;
-  row-gap: 24px;
+  row-gap: 20px;
+
+  border: solid 2px white;
+  border-radius: 25px; /*little baby potato */
+  padding: 25px;
+}
+
+#display {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  justify-content: center;
+
+  row-gap: 8px;
+
+  border: solid grey 2px;
+  color: white;
+
+  overflow-x: hidden;
+  width: 352px;
+
+  padding: 5px 10px;
+}
+
+#display #numbers {
+  font-size: 25px;
 }
 
 #anew-backspace {
@@ -20,18 +50,20 @@ p {
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  column-gap: 20px;
 }
 
 #control {
+  display: flex;
   flex-flow: column;
+  gap: 20px;
 }
 
-#control,
 #control .row {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  gap: 20px;
 }
 
 #control .row p,
@@ -40,6 +72,14 @@ p {
   border-radius: 5px;
   padding: 25px;
   text-align: center;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  background-color: black;
+  cursor: pointer;
+  flex: 1 0 auto;
+}
+
+#anew-backspace p {
+  flex: 1;
 }
